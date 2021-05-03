@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <title>Teste Front Seox</title>
+
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/plugins/bootstrap-theme.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon.jpg">
+</head>
+
+<body>
+    <header>
+        <div class="container d-flex">
+            <div class="col-12 col-lg-11 m-auto">
+                <nav class="navbar navbar-light">
+                    <div class="d-flex align-items-center">
+                        <button class="navbar-toggler collapsed mr-3" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="line1"></span>
+                            <span class="line2"></span>
+                            <span class="line3"></span>
+                        </button>
+                        <a class="logo" href="#">LOGO</a>
+
+                    </div>
+
+                    <form>
+                        <input class="form-control mr-sm-2" type="search" placeholder="O que você procura hoje?"
+                            aria-label="Search">
+                        <button type="submit"><img src="assets/img/menu/magnifying.svg" alt="icone lupa"></button>
+                    </form>
+
+                    <a class="menu-link link-comprar" href="#">Comprar</a>
+
+                    <div class="row d-none d-lg-flex">
+                        <div class="bags">
+                            <img src="assets/img/menu/bags.svg" alt="icone acola de compras">
+                        </div>
+                        <p class="menu-link">
+                            <img src="assets/img/menu/profile.svg" alt="icone avatar">
+                            Olá, Jaqueline
+                        </p>
+                    </div>
+                    <div class="row d-flex d-lg-none">
+                        <p class="menu-profile d-flex align-items-center menu-link navbar-toggler collapsed" type="button" data-toggle="collapse"
+                        data-target="#sub-menu-profile" aria-controls="sub-menu-profile"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                            <img src="assets/img/menu/profile.svg" alt="icone avatar">
+                            Olá, Jaqueline
+                        </p>
+                    </div>
+                    <div class="menu-collapse collapse" id="sub-menu-profile">
+                        <div class="card w-100">
+                            <div class="avatar">
+                                <div class="box d-flex align-items-center justify-content-center m-auto">
+                                    <img id="output" src="assets/img/menu/profile-gray.png" alt="avatar pessoal">
+                                </div>
+                                <input type="file" accept="image/*" name="arquivo" onchange="loadFile(event)">
+                                <label for="arquivo"><img src="assets/img/menu/camera.svg" alt="camera"></label>
+                            </div>
+                            <p class="name">Jaqueline de Oliveira</p>
+    
+                            <ul>
+                                <li class="active">
+                                    <img src="assets/img/menu/box.svg" alt="box">
+                                    Meus pedidos
+                                </li>
+                                <li>
+                                    <img src="assets/img/menu/profile.svg" alt="icone avatar">
+                                    Meus dados
+                                </li>
+                                <li>
+                                    <img src="assets/img/menu/pin.svg" alt="pin">
+                                    Endereços
+                                </li>
+                                <li>
+                                    <img src="assets/img/menu/body.svg" alt="body">
+                                    Minhas medidas
+                                </li>
+                                <li>
+                                    <img src="assets/img/menu/padlook.svg" alt="padlook">
+                                    Minha conta
+                                </li>
+                                <li class="disable">
+                                    <img src="assets/img/menu/logout.svg" alt="icone sair">
+                                    Sair
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="menu-collapse collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Item 1</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Item 3</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Item 3</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Item 4</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </nav>
+            </div>
+
+        </div>
+
+    </header>
+
+    <section id="meus-pedidos">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-4 d-none d-lg-flex">
+                    <div class="card w-100">
+                        <div class="avatar">
+                            <div class="box d-flex align-items-center justify-content-center m-auto">
+                                <img id="output" src="assets/img/menu/profile-gray.png" alt="avatar pessoal">
+                            </div>
+                            <input type="file" accept="image/*" name="arquivo" onchange="loadFile(event)">
+                            <label for="arquivo"><img src="assets/img/menu/camera.svg" alt="camera"></label>
+                        </div>
+                        <p class="name">Jaqueline de Oliveira</p>
+
+                        <ul>
+                            <li class="active">
+                                <img src="assets/img/menu/box.svg" alt="box">
+                                Meus pedidos
+                            </li>
+                            <li>
+                                <img src="assets/img/menu/profile.svg" alt="icone avatar">
+                                Meus dados
+                            </li>
+                            <li>
+                                <img src="assets/img/menu/pin.svg" alt="pin">
+                                Endereços
+                            </li>
+                            <li>
+                                <img src="assets/img/menu/body.svg" alt="body">
+                                Minhas medidas
+                            </li>
+                            <li>
+                                <img src="assets/img/menu/padlook.svg" alt="padlook">
+                                Minha conta
+                            </li>
+                            <li class="disable">
+                                <img src="assets/img/menu/logout.svg" alt="icone sair">
+                                Sair
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-8">
+                    <h2>Meus Pedidos</h2>
+                    <div class="card card-detalhes pedido-entregue w-100">
+                        <div class="row w-100">
+                            <div class="col-12 d-flex align-items-center justify-content-between flex-wrap">
+                                <div class="col-12 col-lg-5 d-flex align-items-center">
+                                    <p class="check">
+                                        <img src="assets/img/pedidos/check.svg" alt="icon check">
+                                    </p>
+                                    <div class="text">
+                                        <p class="pedido">
+                                            <img src="assets/img/menu/box.svg" alt="icon check"> Pedido #17048<br>
+                                            <span class="situacao-pedido">Pedido entregue!</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="space col-12 col-lg-3 itens d-flex align-items-center">
+                                    <div class="col-4 col-lg-6 p-0">
+                                        <img src="assets/img/pedidos/two-items.svg" alt="icon check">
+                                    </div>
+                                    <div class="col-lg-6 p-0">
+                                        <p class="valor">R$ 980,00</p>
+                                        <p>02 itens</p>
+                                    </div>
+                                </div>
+                                <button class="col-12 col-lg-3 offset-lg-1 btn btn-primary btn-collapse" type="button"
+                                    data-toggle="collapse" data-target="#mais-detalhes" aria-expanded="true"
+                                    aria-controls="mais-detalhes">
+                                    Mais detalhes <img src="assets/img/arrow-up.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="col-12 collapse show" id="mais-detalhes">
+                                <div class="card card-body w-100">
+                                    <div class="detalhe d-flex align-items-center justify-content-between w-100">
+                                        <div class="d-flex align-items-center">
+                                            <img src="assets/img/pedidos/caminhao.svg" alt="icon check">
+
+                                            <div class="text d-flex align-items-start flex-column">
+                                                <p>Frete:
+                                                <p class="valor">R$ 35,10 <span>via SEDEX</span></p>
+                                            </div>
+                                        </div>
+                                        <p class="forma-pag">Forma de pagamento:<br>
+                                            <span>Cartão de Crédito</span>
+                                        </p>
+                                        <p class="entrega">Entregue dia:<br>
+                                            <span>09/fev</span>
+                                        </p>
+                                        <img src="assets/img/pedidos/plus.svg" alt="plus" class="plus">
+                                    </div>
+                                    <div class="time-line w-100 d-flex align-items-center justify-content-between">
+                                        <div class="col-2 d-flex align-items-center justify-content-center flex-column">
+                                            <div class="pointer">
+                                                <span></span>
+                                            </div>
+                                            <p>Pedido<br> recebido<br>
+                                                <span>03/fev 09:33</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-2 d-flex align-items-center justify-content-center flex-column">
+                                            <div class="pointer"> <span></span></div>
+                                            <p>Pagamento<br> aprovado<br>
+                                                <span>03/fev 14:33</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-2 d-flex align-items-center justify-content-center flex-column">
+                                            <div class="pointer"><span></span></div>
+                                            <p>Em<br> separação<br>
+                                                <span>06/fev 09:13</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-2 d-flex align-items-center justify-content-center flex-column">
+                                            <div class="pointer"><span></span></div>
+                                            <p>Em<br> transporte<br>
+                                                <span>08/fev 21:45</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-2 d-flex align-items-center justify-content-center flex-column">
+                                            <div class="pin">
+                                                <img src="assets/img/pedidos/check.svg" alt="check item">
+                                            </div>
+                                            <p>Pedido<br> entregue<br>
+                                                <span>09/fev 00:00</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="produtos w-100 d-flex align-items-center justify-content-between flex-wrap">
+
+                                        <div class="cada-item col-12 d-flex align-items-center justify-content-between">
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <img src="assets/img/pedidos/capa-item.png" alt="produto">
+                                                <div
+                                                    class="text d-flex align-items-start justify-content-start flex-column">
+                                                    <p>Elastique:
+                                                    <p class="valor">R$ 540,00</p>
+                                                    <p class="unidade">01 unidade <span>Cor: Neutro Rosado</span>
+                                                        <span>Tamanho: M</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <p class="favorito">
+                                                <svg class="svg" width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M8.37543 1L10.6544 5.61702L15.7509 6.36194L12.0631 9.95377L12.9334 15.0281L8.37543 12.6311L3.81741 15.0281L4.68771 9.95377L1 6.36194L6.09642 5.61702L8.37543 1Z"
+                                                        stroke="#FF5448" stroke-width="1.2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg> Avalie este produto
+                                            </p>
+                                        </div>
+
+                                        <div class="cada-item col-12 d-flex align-items-center justify-content-between">
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <img src="assets/img/pedidos/capa-item.png" alt="produto">
+                                                <div
+                                                    class="text d-flex align-items-start justify-content-start flex-column">
+                                                    <p>Elastique:
+                                                    <p class="valor">R$ 540,00</p>
+                                                    <p class="unidade">01 unidade <span>Cor: Neutro Rosado</span>
+                                                        <span>Tamanho: M</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <p class="favorito">
+                                                <svg class="svg" width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M8.37543 1L10.6544 5.61702L15.7509 6.36194L12.0631 9.95377L12.9334 15.0281L8.37543 12.6311L3.81741 15.0281L4.68771 9.95377L1 6.36194L6.09642 5.61702L8.37543 1Z"
+                                                        stroke="#FF5448" stroke-width="1.2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg> Avalie este produto
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card card-detalhes pedido-a-caminho w-100">
+                        <div class="row w-100">
+                            <div class="col-12 d-flex align-items-center justify-content-between flex-wrap">
+                                <div class="col-12 col-lg-5  d-flex align-items-center">
+                                    <p class="check">
+                                        <img src="assets/img/pedidos/caminhao-withe.svg" alt="icon check">
+                                    </p>
+                                    <div class="text">
+                                        <p class="pedido">
+                                            <img src="assets/img/menu/box.svg" alt="icon check"> Pedido #15324<br>
+                                            <span class="situacao-pedido">Seu pedido está a caminho</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="space col-12 col-lg-3 itens d-flex align-items-center">
+                                    <div class="col-4 col-lg-6 p-0">
+                                        <img src="assets/img/pedidos/one-items.svg" alt="icon check">
+                                    </div>
+                                    <div class="col-6 p-0">
+                                        <p class="valor">R$ 70,00</p>
+                                        <p>01 item</p>
+                                    </div>
+                                </div>
+                                <button class="col-12 col-lg-3 offset-lg-1 btn btn-primary btn-collapse collapsed"
+                                    type="button" data-toggle="collapse" data-target="#mais-detalhes2"
+                                    aria-expanded="false" aria-controls="mais-detalhes2">
+                                    Mais detalhes <img src="assets/img/arrow-up.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="col-12 collapse" id="mais-detalhes2">
+                                <div class="card card-body w-100">
+                                    <div class="detalhe d-flex align-items-center justify-content-between w-100">
+                                        <div class="d-flex align-items-center">
+                                            <img src="assets/img/pedidos/caminhao.svg" alt="icon check">
+
+                                            <div class="text d-flex align-items-start flex-column">
+                                                <p>Frete:
+                                                <p class="valor">R$ 24,10 <span>via SEDEX</span></p>
+                                            </div>
+                                        </div>
+                                        <p class="forma-pag">Forma de pagamento:<br>
+                                            <span>Cartão de Crédito</span>
+                                        </p>
+                                        <p class="rasterio">
+                                            <img src="assets/img/pedidos/copy.svg" alt="">OD828132785BR
+                                        </p>
+                                        <img src="assets/img/pedidos/plus.svg" alt="plus" class="plus">
+                                    </div>
+                                    <div class="time-line w-100 d-flex align-items-center justify-content-between">
+                                        <div class="col-2 d-flex align-items-center justify-content-center flex-column">
+                                            <div class="pointer">
+                                                <span></span>
+                                            </div>
+                                            <p>Pedido<br> recebido<br>
+                                                <span>03/fev 09:33</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-2 d-flex align-items-center justify-content-center flex-column">
+                                            <div class="pointer"> <span></span></div>
+                                            <p>Pagamento<br> aprovado<br>
+                                                <span>03/fev 14:33</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-2 d-flex align-items-center justify-content-center flex-column">
+                                            <div class="pointer"><span></span></div>
+                                            <p>Em<br> separação<br>
+                                                <span>06/fev 09:13</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-2 d-flex align-items-center justify-content-center flex-column">
+                                            <div class="pin">
+                                                <img src="assets/img/pedidos/caminhao-withe.svg" alt="check item">
+                                            </div>
+                                            <p>Em<br> transporte<br>
+                                                <span>08/fev 21:45</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-2 d-flex align-items-center justify-content-center flex-column">
+                                            <div class="pointer gray"><span></span></div>
+                                            <p>Pedido<br> entregue<br>
+                                                <span>&nbsp;</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="produtos w-100 d-flex align-items-center justify-content-between">
+                                        <div class="row w-100">
+                                            <div
+                                                class="cada-item col-12 d-flex align-items-center justify-content-between">
+                                                <div class="d-flex align-items-center justify-content-center">
+                                                    <img src="assets/img/pedidos/capa-item.png" alt="produto">
+                                                    <div
+                                                        class="text d-flex align-items-start justify-content-start flex-column">
+                                                        <p>Elastique:
+                                                        <p class="valor">R$ 540,00</p>
+                                                        <p class="unidade">01 unidade <span>Cor: Neutro Rosado</span>
+                                                            <span>Tamanho: M</span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <p class="favorito">
+                                                    Ver produto <img src="assets/img/pedidos/look.svg" alt="produto">
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card card-detalhes pedido-em-separacao w-100">
+                        <div class="row w-100">
+                            <div class="col-12 d-flex align-items-center justify-content-between flex-wrap">
+                                <div class="col-12 col-lg-5  d-flex align-items-center">
+                                    <p class="check">
+                                        <img src="assets/img/pedidos/box-white.svg" alt="icon check">
+                                    </p>
+                                    <div class="text">
+                                        <p class="pedido">
+                                            <img src="assets/img/menu/box.svg" alt="icon check"> Pedido #16432<br>
+                                            <span class="situacao-pedido">Seu pedido está em separação</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-3  itens d-flex align-items-center">
+                                    <div class="col-4 col-lg-6 p-0">
+                                        <img src="assets/img/pedidos/one-items.svg" alt="icon check">
+                                    </div>
+                                    <div class="col-6 p-0">
+                                        <p class="valor">R$ 800,00</p>
+                                        <p>01 item</p>
+                                    </div>
+                                </div>
+                                <button class="col-12 col-lg-3 offset-lg-1 btn btn-primary btn-collapse collapsed"
+                                    type="button" data-toggle="collapse" data-target="#mais-detalhes3"
+                                    aria-expanded="false" aria-controls="mais-detalhes3">
+                                    Mais detalhes <img src="assets/img/arrow-up.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="col-12 collapse" id="mais-detalhes3">
+                                <div class="card card-body w-100">
+                                    <div class="detalhe d-flex align-items-center justify-content-between w-100">
+                                        <div class="d-flex align-items-center">
+                                            <img src="assets/img/pedidos/caminhao.svg" alt="icon check">
+
+                                            <div class="text d-flex align-items-start flex-column">
+                                                <p>Frete:
+                                                <p class="valor">R$ 24,10 <span>via SEDEX</span></p>
+                                            </div>
+                                        </div>
+                                        <p class="forma-pag">Forma de pagamento:<br>
+                                            <span>Cartão de Crédito</span>
+                                        </p>
+                                        <p class="entrega">Previsão de entrega:<br>
+                                            <span>09/fev</span>
+                                        </p>
+                                        <img src="assets/img/pedidos/plus.svg" alt="plus" class="plus">
+                                    </div>
+                                    <div class="time-line w-100 d-flex align-items-center justify-content-between">
+                                        <div class="col-2 d-flex align-items-center justify-content-center flex-column">
+                                            <div class="pointer">
+                                                <span></span>
+                                            </div>
+                                            <p>Pedido<br> recebido<br>
+                                                <span>03/fev 09:33</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-2 d-flex align-items-center justify-content-center flex-column">
+                                            <div class="pointer"> <span></span></div>
+                                            <p>Pagamento<br> aprovado<br>
+                                                <span>03/fev 14:33</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-2 d-flex align-items-center justify-content-center flex-column">
+                                            <div class="pin">
+                                                <img src="assets/img/pedidos/box-white.svg" alt="check item">
+                                            </div>
+                                            <p>Em<br> separação<br>
+                                                <span>06/fev 09:13</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-2 d-flex align-items-center justify-content-center flex-column">
+                                            <div class="pointer gray"><span></span></div>
+                                            <p>Em<br> transporte<br>
+                                                <span>&nbsp;</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-2 d-flex align-items-center justify-content-center flex-column">
+                                            <div class="pointer gray"><span></span></div>
+                                            <p>Pedido<br> entregue<br>
+                                                <span>&nbsp;</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="produtos w-100 d-flex align-items-center justify-content-between">
+                                        <div class="row w-100">
+                                            <div
+                                                class="cada-item col-12 d-flex align-items-center justify-content-between">
+                                                <div class="d-flex align-items-center justify-content-center">
+                                                    <img src="assets/img/pedidos/capa-item.png" alt="produto">
+                                                    <div
+                                                        class="text d-flex align-items-start justify-content-start flex-column">
+                                                        <p>Elastique:
+                                                        <p class="valor">R$ 540,00</p>
+                                                        <p class="unidade">01 unidade <span>Cor: Neutro Rosado</span>
+                                                            <span>Tamanho: M</span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <p class="favorito">
+                                                    Ver produto <img src="assets/img/pedidos/look.svg" alt="produto">
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card card-detalhes pedido-foi-aprovado w-100">
+                        <div class="row w-100">
+                            <div class="col-12 d-flex align-items-center justify-content-between flex-wrap">
+                                <div class="col-12 col-lg-5 d-flex align-items-center">
+                                    <p class="check">
+                                        <img src="assets/img/pedidos/like.svg" alt="icon check">
+                                    </p>
+                                    <div class="text">
+                                        <p class="pedido">
+                                            <img src="assets/img/menu/box.svg" alt="icon check"> Pedido #36597<br>
+                                            <span class="situacao-pedido">O pagamento foi aprovado!</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="space col-12 col-lg-3 itens d-flex align-items-center">
+                                    <div class="col-4 col-lg-6 p-0">
+                                        <img src="assets/img/pedidos/two-items.svg" alt="icon check">
+                                    </div>
+                                    <div class="col-6 p-0">
+                                        <p class="valor">R$ 1250,00</p>
+                                        <p>02 itens</p>
+                                    </div>
+                                </div>
+                                <button class="col-12 col-lg-3 offset-lg-1 btn btn-primary btn-collapse collapsed"
+                                    type="button" data-toggle="collapse" data-target="#mais-detalhes4"
+                                    aria-expanded="false" aria-controls="mais-detalhes4">
+                                    Mais detalhes <img src="assets/img/arrow-up.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="col-12 collapse" id="mais-detalhes4">
+                                <div class="card card-body w-100">
+                                    <div class="detalhe d-flex align-items-center justify-content-between w-100">
+                                        <div class="d-flex align-items-center">
+                                            <img src="assets/img/pedidos/caminhao.svg" alt="icon check">
+
+                                            <div class="text d-flex align-items-start flex-column">
+                                                <p>Frete:
+                                                <p class="valor">R$ 24,10 <span>via SEDEX</span></p>
+                                            </div>
+                                        </div>
+                                        <p class="forma-pag">Forma de pagamento:<br>
+                                            <span>Cartão de Crédito</span>
+                                        </p>
+                                        <p class="entrega">Previsão de entrega:<br>
+                                            <span>09/fev</span>
+                                        </p>
+                                        <img src="assets/img/pedidos/plus.svg" alt="plus" class="plus">
+                                    </div>
+                                    <div class="time-line w-100 d-flex align-items-center justify-content-between">
+                                        <div class="col-2 d-flex align-items-center justify-content-center flex-column">
+                                            <div class="pointer">
+                                                <span></span>
+                                            </div>
+                                            <p>Pedido<br> recebido<br>
+                                                <span>03/fev 09:33</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-2 d-flex align-items-center justify-content-center flex-column">
+                                            <div class="pin">
+                                                <img src="assets/img/pedidos/box-white.svg" alt="check item">
+                                            </div>
+                                            <p>Pagamento<br> aprovado<br>
+                                                <span>03/fev 14:33</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-2 d-flex align-items-center justify-content-center flex-column">
+                                            <div class="pointer gray"><span></span></div>
+                                            <p>Em<br> separação<br>
+                                                <span>&nbsp;</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-2 d-flex align-items-center justify-content-center flex-column">
+                                            <div class="pointer gray"><span></span></div>
+                                            <p>Em<br> transporte<br>
+                                                <span>&nbsp;</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-2 d-flex align-items-center justify-content-center flex-column">
+                                            <div class="pointer gray"><span></span></div>
+                                            <p>Pedido<br> entregue<br>
+                                                <span>&nbsp;</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="produtos w-100 d-flex align-items-center justify-content-between">
+                                        <div class="row w-100">
+                                            <div
+                                                class="cada-item col-12 d-flex align-items-center justify-content-between">
+                                                <div class="d-flex align-items-center justify-content-center">
+                                                    <img src="assets/img/pedidos/capa-item.png" alt="produto">
+                                                    <div
+                                                        class="text d-flex align-items-start justify-content-start flex-column">
+                                                        <p>Elastique:
+                                                        <p class="valor">R$ 540,00</p>
+                                                        <p class="unidade">01 unidade <span>Cor: Neutro Rosado</span>
+                                                            <span>Tamanho: M</span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <p class="favorito">
+                                                    Ver produto <img src="assets/img/pedidos/look.svg" alt="produto">
+                                                </p>
+                                            </div>
+                                            <div
+                                                class="cada-item col-12 d-flex align-items-center justify-content-between">
+                                                <div class="d-flex align-items-center justify-content-center">
+                                                    <img src="assets/img/pedidos/capa-item.png" alt="produto">
+                                                    <div
+                                                        class="text d-flex align-items-start justify-content-start flex-column">
+                                                        <p>Elastique:
+                                                        <p class="valor">R$ 540,00</p>
+                                                        <p class="unidade">01 unidade <span>Cor: Neutro Rosado</span>
+                                                            <span>Tamanho: M</span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <p class="favorito">
+                                                    Ver produto <img src="assets/img/pedidos/look.svg" alt="produto">
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card card-detalhes pedido-foi-recebido w-100">
+                        <div class="row w-100">
+                            <div class="col-12 d-flex align-items-center justify-content-between flex-wrap">
+                                <div class="col-12 col-lg-5 d-flex align-items-center">
+                                    <p class="check">
+                                        <img src="assets/img/pedidos/sun.svg" alt="icon check">
+                                    </p>
+                                    <div class="text">
+                                        <p class="pedido">
+                                            <img src="assets/img/menu/box.svg" alt="icon check"> Pedido #64528<br>
+                                            <span class="situacao-pedido">O pedido foi recebido</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="space col-12 col-lg-3 itens d-flex align-items-center">
+                                    <div class="col-4 col-lg-6 p-0">
+                                        <img src="assets/img/pedidos/mult-items.svg" alt="icon check">
+                                    </div>
+
+                                    <div class="col-6 p-0">
+                                        <p class="valor">R$ 800,00</p>
+                                        <p>03 itens</p>
+                                    </div>
+                                </div>
+                                <button class="col-12 col-lg-3 offset-lg-1 btn btn-primary btn-collapse collapsed"
+                                    type="button" data-toggle="collapse" data-target="#mais-detalhes5"
+                                    aria-expanded="false" aria-controls="mais-detalhes5">
+                                    Mais detalhes <img src="assets/img/arrow-up.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="col-12 collapse" id="mais-detalhes5">
+                                <div class="card card-body w-100">
+                                    <div class="detalhe d-flex align-items-center justify-content-between w-100">
+                                        <div class="d-flex align-items-center">
+                                            <img src="assets/img/pedidos/caminhao.svg" alt="icon check">
+
+                                            <div class="text d-flex align-items-start flex-column">
+                                                <p>Frete:
+                                                <p class="valor">R$ 24,10 <span>via SEDEX</span></p>
+                                            </div>
+                                        </div>
+                                        <p class="forma-pag">Forma de pagamento:<br>
+                                            <span>Cartão de Crédito</span>
+                                        </p>
+                                        <p class="entrega">Previsão de entrega:<br>
+                                            <span>09/fev</span>
+                                        </p>
+                                        <img src="assets/img/pedidos/plus.svg" alt="plus" class="plus">
+                                    </div>
+                                    <div class="time-line w-100 d-flex align-items-center justify-content-between">
+                                        <div class="col-2 d-flex align-items-center justify-content-center flex-column">
+                                            <div class="pin">
+                                                <img src="assets/img/pedidos/sun.svg" alt="check item">
+                                            </div>
+                                            <p>Pedido<br> recebido<br>
+                                                <span>03/fev 09:33</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-2 d-flex align-items-center justify-content-center flex-column">
+                                            <div class="pointer gray"><span></span></div>
+                                            <p>Pagamento<br> aprovado<br>
+                                                <span>&nbsp;</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-2 d-flex align-items-center justify-content-center flex-column">
+                                            <div class="pointer gray"><span></span></div>
+                                            <p>Em<br> separação<br>
+                                                <span>&nbsp;</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-2 d-flex align-items-center justify-content-center flex-column">
+                                            <div class="pointer gray"><span></span></div>
+                                            <p>Em<br> transporte<br>
+                                                <span>&nbsp;</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-2 d-flex align-items-center justify-content-center flex-column">
+                                            <div class="pointer gray"><span></span></div>
+                                            <p>Pedido<br> entregue<br>
+                                                <span>&nbsp;</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="produtos w-100 d-flex align-items-center justify-content-between">
+                                        <div class="row w-100">
+                                            <div
+                                                class="cada-item col-12 d-flex align-items-center justify-content-between">
+                                                <div class="d-flex align-items-center justify-content-center">
+                                                    <img src="assets/img/pedidos/capa-item.png" alt="produto">
+                                                    <div
+                                                        class="text d-flex align-items-start justify-content-start flex-column">
+                                                        <p>Elastique:
+                                                        <p class="valor">R$ 540,00</p>
+                                                        <p class="unidade">01 unidade <span>Cor: Neutro Rosado</span>
+                                                            <span>Tamanho: M</span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <p class="favorito">
+                                                    Ver produto <img src="assets/img/pedidos/look.svg" alt="produto">
+                                                </p>
+                                            </div>
+                                            <div
+                                                class="cada-item col-12 d-flex align-items-center justify-content-between">
+                                                <div class="d-flex align-items-center justify-content-center">
+                                                    <img src="assets/img/pedidos/capa-item.png" alt="produto">
+                                                    <div
+                                                        class="text d-flex align-items-start justify-content-start flex-column">
+                                                        <p>Elastique:
+                                                        <p class="valor">R$ 540,00</p>
+                                                        <p class="unidade">01 unidade <span>Cor: Neutro Rosado</span>
+                                                            <span>Tamanho: M</span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <p class="favorito">
+                                                    Ver produto <img src="assets/img/pedidos/look.svg" alt="produto">
+                                                </p>
+                                            </div>
+                                            <div
+                                                class="cada-item col-12 d-flex align-items-center justify-content-between">
+                                                <div class="d-flex align-items-center justify-content-center">
+                                                    <img src="assets/img/pedidos/capa-item.png" alt="produto">
+                                                    <div
+                                                        class="text d-flex align-items-start justify-content-start flex-column">
+                                                        <p>Elastique:
+                                                        <p class="valor">R$ 540,00</p>
+                                                        <p class="unidade">01 unidade <span>Cor: Neutro Rosado</span>
+                                                            <span>Tamanho: M</span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <p class="favorito">
+                                                    Ver produto <img src="assets/img/pedidos/look.svg" alt="produto">
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card card-detalhes pedido-cancelado w-100">
+                        <div class="row w-100">
+                            <div class="col-12 d-flex align-items-center justify-content-between flex-wrap">
+                                <div class="col-12 col-lg-5 d-flex align-items-center">
+                                    <p class="check">
+                                        <img src="assets/img/pedidos/sad.svg" alt="icon check">
+                                    </p>
+                                    <div class="text">
+                                        <p class="pedido">
+                                            <img src="assets/img/menu/box.svg" alt="icon check"> Pedido #54462<br>
+                                            <span class="situacao-pedido">Seu pedido foi cancelado</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="space col-12 col-lg-3 itens d-flex align-items-center">
+                                    <div class="col-4 col-lg-6 p-0">
+                                        <img src="assets/img/pedidos/mult-items.svg" alt="icon check">
+                                    </div>
+
+                                    <div class="col-6 p-0">
+                                        <p class="valor">R$ 1.600,00</p>
+                                        <p>03 itens</p>
+                                    </div>
+                                </div>
+                                <button class="col-12 col-lg-3 offset-lg-1 btn btn-primary btn-collapse collapsed"
+                                    type="button" data-toggle="collapse" data-target="#mais-detalhes6"
+                                    aria-expanded="false" aria-controls="mais-detalhes6">
+                                    Mais detalhes <img src="assets/img/arrow-up.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="col-12 collapse" id="mais-detalhes6">
+                                <div class="card card-body w-100">
+                                    <div class="detalhe d-flex align-items-center justify-content-between w-100">
+                                        <div class="d-flex align-items-center">
+                                            <img src="assets/img/pedidos/caminhao.svg" alt="icon check">
+
+                                            <div class="text d-flex align-items-start flex-column">
+                                                <p>Frete:
+                                                <p class="valor">R$ 24,10 <span>via SEDEX</span></p>
+                                            </div>
+                                        </div>
+                                        <p class="forma-pag">Forma de pagamento:<br>
+                                            <span>Cartão de Crédito</span>
+                                        </p>
+                                        <p class="entrega">Pedido cancelado<br>
+                                        </p>
+                                        <img src="assets/img/pedidos/plus.svg" alt="plus" class="plus">
+                                    </div>
+                                    <div class="time-line w-100 d-flex align-items-center justify-content-between">
+                                        <div class="col-2 d-flex align-items-center justify-content-center flex-column">
+                                            <div class="pin">
+                                                <img src="assets/img/pedidos/sad.svg" alt="check item">
+                                            </div>
+                                            <p>Pedido<br> cancelado<br>
+                                                <span>03/fev 09:33</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-2 d-flex align-items-center justify-content-center flex-column">
+                                            <div class="pointer gray"><span></span></div>
+                                            <p>Pagamento<br> aprovado<br>
+                                                <span>&nbsp;</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-2 d-flex align-items-center justify-content-center flex-column">
+                                            <div class="pointer gray"><span></span></div>
+                                            <p>Em<br> separação<br>
+                                                <span>&nbsp;</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-2 d-flex align-items-center justify-content-center flex-column">
+                                            <div class="pointer gray"><span></span></div>
+                                            <p>Em<br> transporte<br>
+                                                <span>&nbsp;</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-2 d-flex align-items-center justify-content-center flex-column">
+                                            <div class="pointer gray"><span></span></div>
+                                            <p>Pedido<br> entregue<br>
+                                                <span>&nbsp;</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="produtos w-100 d-flex align-items-center justify-content-between">
+                                        <div class="row w-100">
+                                            <div
+                                                class="cada-item col-12 d-flex align-items-center justify-content-between">
+                                                <div class="d-flex align-items-center justify-content-center">
+                                                    <img src="assets/img/pedidos/capa-item.png" alt="produto">
+                                                    <div
+                                                        class="text d-flex align-items-start justify-content-start flex-column">
+                                                        <p>Elastique:
+                                                        <p class="valor">R$ 540,00</p>
+                                                        <p class="unidade">01 unidade <span>Cor: Neutro Rosado</span>
+                                                            <span>Tamanho: M</span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <p class="favorito">
+                                                    Ver produto <img src="assets/img/pedidos/look.svg" alt="produto">
+                                                </p>
+                                            </div>
+                                            <div
+                                                class="cada-item col-12 d-flex align-items-center justify-content-between">
+                                                <div class="d-flex align-items-center justify-content-center">
+                                                    <img src="assets/img/pedidos/capa-item.png" alt="produto">
+                                                    <div
+                                                        class="text d-flex align-items-start justify-content-start flex-column">
+                                                        <p>Elastique:
+                                                        <p class="valor">R$ 540,00</p>
+                                                        <p class="unidade">01 unidade <span>Cor: Neutro Rosado</span>
+                                                            <span>Tamanho: M</span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <p class="favorito">
+                                                    Ver produto <img src="assets/img/pedidos/look.svg" alt="produto">
+                                                </p>
+                                            </div>
+                                            <div
+                                                class="cada-item col-12 d-flex align-items-center justify-content-between">
+                                                <div class="d-flex align-items-center justify-content-center">
+                                                    <img src="assets/img/pedidos/capa-item.png" alt="produto">
+                                                    <div
+                                                        class="text d-flex align-items-start justify-content-start flex-column">
+                                                        <p>Elastique:
+                                                        <p class="valor">R$ 540,00</p>
+                                                        <p class="unidade">01 unidade <span>Cor: Neutro Rosado</span>
+                                                            <span>Tamanho: M</span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <p class="favorito">
+                                                    Ver produto <img src="assets/img/pedidos/look.svg" alt="produto">
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <p class="w-100">Formas de pagamento</p>
+                    <div class="icons d-flex align-items-center">
+                        <div class="icon">
+                            <img src="assets/img/footer/logo-visa.svg" alt="visa">
+                        </div>
+                        <div class="icon">
+                            <img src="assets/img/footer/logo-master.svg" alt="master">
+                        </div>
+                        <div class="icon">
+                            <img src="assets/img/footer/logo-paypal.svg" alt="logo-paypal">
+                        </div>
+                        <div class="icon">
+                            <img src="assets/img/footer/logo-diners-club.svg" alt="logo-diners-club">
+                        </div>
+                        <div class="icon">
+                            <img src="assets/img/footer/logo-hiper.svg" alt="hiper">
+                        </div>
+                        <div class="icon">
+                            <img src="assets/img/footer/logo-american-express.svg" alt="logo-american-express">
+                        </div>
+                        <div class="icon">
+                            <img src="assets/img/footer/logo-elo.png" alt="logo-elo">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="logos d-flex align-items-center justify-content-end">
+                        <img src="assets/img/footer/logo-site-blindado.svg" alt="">
+                        <img src="assets/img/footer/reclame-aqui.svg" alt="">
+                        <img src="assets/img/footer/logo-compra-segura.svg" alt="">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <p class="politicas">Preços e condições de pagamento exclusivos para compras via Internet. Vendas
+                        sujeitas à analise e confirmação de dados. Fica garantida a empresa a eventual retificação das
+                        ofertas e erros de digitação que possam ter sido veiculados, podendo ser estornado a compra.
+                        77.941.490/0225-58 - Gazin Industria e Comercio De Móveis e Eletrodomesticos LTDA - ROD PR 082
+                        SN - Centro - CEP: 87485000 -</p>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script type="text/javascript" src="assets/js/plugins/jquery.js"></script>
+<script type="text/javascript" src="assets/js/plugins/bootstrap.js"></script>
+<script type="text/javascript" src="assets/js/script.js"></script>
+
+</html>
